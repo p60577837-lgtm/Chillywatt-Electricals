@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chillywatts Electricals | Engineering & Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-portal animate-pop-in">
+        <header>
+            <div class="brand-tag">CHILLYWATTS</div>
+            <h1 id="greeting">Loading Portal...</h1>
+            <p class="subtitle">Electrical Engineering | Solar | Digital Solutions</p>
+        </header>
+
+        <section class="booking-card glass">
+            <h3>Hire for a Project</h3>
+            <div class="input-row">
+                <input type="text" id="client-name" placeholder="Your Name">
+                <select id="service-type">
+                    <option value="Solar">Solar Installation</option>
+                    <option value="Wiring">House Wiring</option>
+                    <option value="Web-App">Web/App Design</option>
+                    <option value="Flyers">Graphic Design</option>
+                </select>
+                <button id="bookBtn" class="btn-main">Get a Quote</button>
+            </div>
+        </section>
+
+        <section class="qa-section">
+            <h3>Engineering Q&A</h3>
+            <div id="qa-container" class="scroll-area">
+                </div>
+            <div class="post-box">
+                <input type="text" id="question-text" placeholder="Ask Chillywatts a question...">
+                <button onclick="askQuestion()" class="btn-sub">Submit Question</button>
+            </div>
+        </section>
+
+        <section class="review-section">
+            <h3>Client Reviews</h3>
+            <div id="review-list" class="scroll-area"></div>
+            <div class="post-box">
+                <input type="text" id="rev-name" placeholder="Your Name">
+                <textarea id="rev-content" placeholder="How was my service?"></textarea>
+                <button onclick="postReview()" class="btn-main">Post Review</button>
+            </div>
+        </section>
+    </div>
+
+    <a href="https://wa.me/2348156001202" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
